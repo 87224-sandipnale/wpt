@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <label for="f">First number:</label>
+    <input type="number" id="f"> <br><br>
+    
+    <label for="se">Second number:</label>
+    <input type="number" id="se"> <br><br>
+    
+    <label for="result">Result:</label>
+    <input type="number" id="result" readonly> <br><br>
+    <div id="0"></div>
+
+    <input type="button" value="Multiplication" onclick="calculate('*')">
+    <input type="button" value="Subtraction" onclick="calculate('-')">
+    <input type="button" value="Addition" onclick="calculate('+')">
+    <input type="button" value="Division" onclick="calculate('/')">
+
+    <script>
+        function calculate(operation) {
+            const num1 = parseFloat(document.getElementById("f").value);
+            const num2 = parseFloat(document.getElementById("se").value);
+            
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = 'Error: Invalid input';
+            } else {
+                switch (operation) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        result = num2 !== 0 ? num1 / num2 : 'Error: Division by zero';
+                        break;
+                    default:
+                        result = 'Error: Unknown operation';
+                }
+            }
+
+            document.getElementById("result").value = result;
+        }
+    </script>
+</body>
+</html>

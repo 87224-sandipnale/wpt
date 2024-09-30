@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.text {
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            color: white; 
+            font-size: 20px; 
+            text-shadow: 1px 1px 2px black; 
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body background="back.jpg">
+
+<center>   <div style="background-color: rgb(131, 119, 119); height: 30px; width: 700px;"><h3>HTML5 STICKY <img src="E.jpg" alt="" style="height: 20px; width: 20px;"> <img src="cross.jpg" style="height: 20px; width: 20px;" alt=""> <img src="zoom.png"  style="height: 20px; width: 20px;" alt=""> <img src="zoom-out.png" alt="" style="height: 20px; width: 20px;"> <img src="t.jpg" style="height: 20px; width: 20px;" alt=""> <button style="top: 2%;">donate</button></h3> </div>   </center> 
+
+
+<table border="1px" style="border-color: red;">
+
+    <div style="display: flex; margin-left: 170px; margin-top: 30px;" class="row"  >
+          <div style=><img src="1.jpg" style="height: 200px; width: 200px; " alt="" class="column "></div>
+
+        <div class="text" style="top:30%; left: 25%;">  03/08/2020</div>
+         
+        
+           
+       <div><img src="2.jpg" style="height: 200px; width: 200px; " alt="" class="column " ></div>
+       <div class="text" style="top:30%; left: 40%;">  03/08/2020</div>
+         <div><img src="3.jpg"  style="height: 200px; width: 200px;" alt="" class="column "></div>
+         <div class="text" style="top:30%; left: 60%;">  07/08/2020 pm</div>
+         <div><img src="4.jpg" style="height: 200px; width: 200px;" alt="" class="column "></div> 
+         <div class="text" style="top:30%; left: 78%;">  05/08/2020 pm</div>
+        
+        </div>
+    
+        <div style="display: flex; margin-left: 170px; margin-top: 20px;" class="row">
+             <div><img src="5.jpg" style="height: 200px; width: 200px;" alt="" class="column "></div>
+             <div class="text" style="top:70%; left: 25%;">  09/08/2020 pm</div>
+             
+            <div> <img src="2.jpg" style="height: 200px; width: 200px;" alt="" class="column "></div>
+            <div class="text" style="top:70%; left: 40%;">  26/08/2020 pm</div>
+             <div><img src="3.jpg"  style="height: 200px; width: 200px;" alt="" class="column "></div>
+             <div class="text" style="top:70%; left: 60%;">  24/08/2020 pm</div>
+             <div><img src="4.jpg" style="height: 200px; width: 200px;" alt=""class="column "></div>
+             <div class="text" style="top:70%; left: 78%;">  01/09/2020 pm</div> 
+            
+        </div>
+</table>
+
+
+</body>
+</html>
